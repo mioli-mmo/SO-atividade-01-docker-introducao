@@ -29,15 +29,14 @@ Vamos criar um contêiner Docker que execute um código Python da máquina hospe
 
 1. Fork desse repositório para sua conta no github
 2. Adicionar na linha 10 deste arquivo o nome do aluno. Use o formato igual a do professor, conforme linha 9.
-3. Criar o Código Python.
+3. Criar o código Python.
 4. Criar o Dockerfile
-5. Construir a Imagem Docker
-6. Construir a Imagem Docker
-7. Executar o Contêiner Docker
+5. Construir a imagem docker
+6. Executar o contêiner docker
 
 
 
-#### **Passo 4: Criar o Código Python**
+#### **Passo 3: Criar o Código Python**
 
 Crie um arquivo chamado `app.py` com o seguinte conteúdo:
 
@@ -46,7 +45,7 @@ print("Olá, Docker!")
 ```
 
 
-#### **Passo 5: Criar o Dockerfile**
+#### **Passo 4: Criar o Dockerfile**
 
 Crie um arquivo chamado `Dockerfile` no mesmo diretório que o `app.py` com o seguinte conteúdo:
 
@@ -62,7 +61,7 @@ CMD ["python", "/app.py"]
 ```
 
 
-#### **Passo 6: Construir a Imagem Docker**
+#### **Passo 5: Construir a Imagem Docker**
 
 No terminal, navegue até o diretório onde estão os arquivos `app.py` e `Dockerfile` e execute o seguinte comando para construir a imagem Docker:
 
@@ -71,7 +70,7 @@ docker build -t python-app .
 ```
 
 
-#### **Passo 7: Executar o Contêiner Docker**
+#### **Passo 6: Executar o Contêiner Docker**
 
 Depois de construir a imagem, execute o contêiner com o seguinte comando:
 
